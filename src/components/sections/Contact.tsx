@@ -1,54 +1,59 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Contact() {
+  const [status, setStatus] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const res = await fetch("/api/leads", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.get("name"),
+        phone: formData.get("phone"),
+        email: formData.get("email"),
+        goal: formData.get("goal"),
+        message: formData.get("message"),
+      }),
+    });
+
+    if (res.ok) {
+      setStatus("Submitted successfully!");
+      form.reset();
+    } else {
+      setStatus("Something went wrong. Check setup.");
+    }
+  }
+
   return (
     <section id="book">
       <div className="section-tag">Get in Touch</div>
-
-      <h2 className="section-h2">
-        BOOK YOUR <span>FREE TRIAL</span>
-      </h2>
-
-      <p className="section-lead">
-        Share your details and our team will contact you once bookings open.
-      </p>
+      <h2 className="section-h2">BOOK YOUR <span>FREE TRIAL</span></h2>
 
       <div className="book-grid">
-        <form className="contact-form">
-          <input type="text" placeholder="Full Name" required />
-          <input type="tel" placeholder="Phone Number" required />
-          <input type="email" placeholder="Email Address" />
-          <select>
-            <option>Fitness Goal</option>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input name="name" type="text" placeholder="Full Name" required />
+          <input name="phone" type="tel" placeholder="Phone Number" required />
+          <input name="email" type="email" placeholder="Email Address" />
+          <select name="goal">
+            <option value="">Fitness Goal</option>
             <option>Weight Loss</option>
             <option>Muscle Building</option>
             <option>Body Transformation</option>
             <option>General Fitness</option>
           </select>
-          <textarea placeholder="Message"></textarea>
+          <textarea name="message" placeholder="Message"></textarea>
 
           <button type="submit">Submit Enquiry</button>
+          {status && <p>{status}</p>}
         </form>
-
-        <div className="contact-info">
-          <div>
-            <h4>Location</h4>
-            <p>Hyderabad, Telangana</p>
-          </div>
-
-          <div>
-            <h4>Phone</h4>
-            <p>+91 9642344669</p>
-          </div>
-
-          <div>
-            <h4>Email</h4>
-            <p>vamsi@yofitness.in</p>
-          </div>
-
-          <div>
-            <h4>Opening</h4>
-            <p>Launching Soon</p>
-          </div>
-        </div>
       </div>
     </section>
   );
