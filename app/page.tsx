@@ -7,15 +7,15 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 text-xl md:text-2xl text-lime-300 font-semibold">
-          Premium fitness experience coming soon.
+          Premium workout experience building soon in Hyderabad.
         </p>
 
-        <p className="mt-4 text-gray-300">
-          Luxury training. Elite equipment. Transformation-focused coaching.
-        </p>
+        {/* <p className="mt-4 text-gray-300">
+          Transformation-focused coaching.
+        </p> */}
 
         <div className="mt-10 text-sm text-gray-400">
-          Hyderabad • Launching Soon
+          Vamsi Raghava Yenumula
         </div>
       </section>
     </main>
