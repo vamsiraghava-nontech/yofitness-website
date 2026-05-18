@@ -12,7 +12,7 @@ export default function About() {
           <div className="about-accent"></div>
 
           <div className="about-badge">
-            Est. 2025
+            Est. 2026
             <span>Hyderabad, India</span>
           </div>
         </div>
