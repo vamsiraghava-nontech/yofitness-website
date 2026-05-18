@@ -36,7 +36,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          © 2025 <span>Yo! Fitness</span>. All rights reserved.
+          © 2026 <span>Yo! Fitness</span>. All rights reserved.
         </p>
 
         <p>Made in Hyderabad</p>
