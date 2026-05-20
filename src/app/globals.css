@@ -485,12 +485,24 @@ nav {
   justify-content: center;
 }
 
-.about-visual-inner {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 8rem;
-  color: rgba(200,244,0,0.08);
-  line-height: 1;
-  text-align: center;
+.about-logo-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about-logo {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 0 20px rgba(200,244,0,0.15))
+    drop-shadow(0 0 50px rgba(200,244,0,0.08));
 }
 
 .about-accent {
@@ -995,3 +1007,4 @@ footer {
     gap: 3rem;
   }
 }
+
