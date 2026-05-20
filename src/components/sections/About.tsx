@@ -7,7 +7,7 @@ export default function About() {
         <div className="about-visual">
           <div className="about-logo-wrapper">
             <Image
-              src="/images/Yo! Fitness Logo.jpeg"
+              src="/images/logo.jpeg"
               alt="Yo Fitness Logo"
               width={500}
               height={500}
