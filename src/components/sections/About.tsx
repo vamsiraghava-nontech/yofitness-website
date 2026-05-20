@@ -34,7 +34,7 @@ export default function About() {
 
           <ul className="about-points">
             <li>
-              <div className="about-icon">💪</div>
+              <div className="about-icon"></div>
 
               <div className="about-point-text">
                 <h4>Premium Equipment</h4>
@@ -47,7 +47,7 @@ export default function About() {
             </li>
 
             <li>
-              <div className="about-icon">🎯</div>
+              <div className="about-icon"></div>
 
               <div className="about-point-text">
                 <h4>Expert Trainers</h4>
@@ -59,7 +59,7 @@ export default function About() {
             </li>
 
             <li>
-              <div className="about-icon">🔥</div>
+              <div className="about-icon"></div>
 
               <div className="about-point-text">
                 <h4>Transformation Focused</h4>

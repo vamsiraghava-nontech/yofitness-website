@@ -5,10 +5,10 @@ export default function Hero() {
       <div className="hero-grid-overlay"></div>
 
       <div className="hero-content">
-        <div className="hero-tag">🔥 Premium Gym Coming Soon in Hyderabad</div>
+        <div className="hero-tag">Premium Gym Coming Soon in Hyderabad</div>
 
         <h1 className="hero-h1">
-          TRAIN
+          REPS
           <br />
           <span>RECOVER</span>
           <br />

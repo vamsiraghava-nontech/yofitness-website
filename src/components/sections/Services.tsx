@@ -1,10 +1,10 @@
 const services = [
-  ["01", "🏋️", "Gym Membership", "Premium gym floor access with strength, cardio, and functional training zones."],
-  ["02", "🎯", "Personal Training", "One-on-one coaching designed around your goals, body type, and schedule."],
-  ["03", "💃", "Group Classes", "High-energy Zumba, yoga, mobility, cardio, and community-led sessions."],
-  ["04", "🥗", "Diet & Nutrition", "Practical nutrition guidance for fat loss, muscle gain, and lifestyle improvement."],
-  ["05", "🌿", "Recovery", "Stretching, mobility, recovery support, and wellness-focused add-ons."],
-  ["06", "🔄", "Transformation", "Structured transformation programs with training, nutrition, and accountability."],
+  ["01", "Gym Membership", "Premium gym floor access with strength, cardio, and functional training zones."],
+  ["02", "Personal Training", "One-on-one coaching designed around your goals, body type, and schedule."],
+  ["03", "Group Classes", "High-energy Zumba, yoga, mobility, cardio, and community-led sessions."],
+  ["04", "Diet & Nutrition", "Practical nutrition guidance for fat loss, muscle gain, and lifestyle improvement."],
+  ["05", "Recovery", "Stretching, mobility, recovery support, and wellness-focused add-ons."],
+  ["06", "Transformation", "Structured transformation programs with training, nutrition, and accountability."],
 ];
 
 export default function Services() {
