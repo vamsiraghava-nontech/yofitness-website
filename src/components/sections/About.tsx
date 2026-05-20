@@ -1,12 +1,19 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about">
       <div className="about-grid">
         <div className="about-visual">
-          <div className="about-visual-inner">
-            YO!
-            <br />
-            FITNESS
+          <div className="about-logo-wrapper">
+            <Image
+              src="/images/Yo! Fitness Logo.jpeg"
+              alt="Yo Fitness Logo"
+              width={500}
+              height={500}
+              className="about-logo"
+              priority
+            />
           </div>
 
           <div className="about-accent"></div>
